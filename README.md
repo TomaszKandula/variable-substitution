@@ -5,7 +5,7 @@
 - Fixes messy `.gitignore`.
 - Bundles `node_modules` used in action by NCC.
 
-# GitHub Action for substituting variables in parameterized files ![.github/workflows/ci.yml](https://github.com/microsoft/variable-substitution/workflows/.github/workflows/ci.yml/badge.svg?branch=master)
+# GitHub Action for substituting variables in parameterized files ![.github/workflows/ci.yml](https://github.com/TomaszKandula/variable-substitution/workflows/.github/workflows/ci.yml/badge.svg?branch=master)
 
 With the Variable Substitution Action for GitHub, you can apply variable substitution to XML, JSON and YAML based configuration and parameter files.
 
@@ -16,7 +16,7 @@ With the Variable Substitution Action for GitHub, you can apply variable substit
 
 If you are looking for more Github Actions to deploy code or a customized image into an Azure Webapp or a Kubernetes service, consider using [Azure Actions](https://github.com/Azure/actions).
 
-The definition of this Github Action is in [action.yml](https://github.com/microsoft/variable-substitution/blob/master/action.yml).
+The definition of this Github Action is in [action.yml](https://github.com/TomaszKandula/variable-substitution/blob/master/action.yml).
 
 ### Example
 See [Use variable substitution with GitHub Actions](https://docs.microsoft.com/en-us/azure/developer/github/github-variable-substitution) for an example of how to use variable substitution.
