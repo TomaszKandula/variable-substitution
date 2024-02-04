@@ -1,5 +1,5 @@
 # action.yml
-name: 'Substitute your variables w/Node16'
+name: 'Substitute your variables w/Node20'
 description: 'Apply Variable substitution in XML,JSON or YAML files. Github.com/Azure/Actions'
 inputs: 
   files:
@@ -9,5 +9,5 @@ branding:
   icon: 'play'
   color: 'green'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
