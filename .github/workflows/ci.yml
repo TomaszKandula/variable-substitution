@@ -1,7 +1,6 @@
 on:
   pull_request:
-    branches:
-      - master
+    branches: [ dev ]
 
 jobs:
   build_test_job:
@@ -13,7 +12,7 @@ jobs:
     steps:
 
     - name: 'Checking out repo code'
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: 'Validate build'
       run: |

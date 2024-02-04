@@ -1,11 +1,11 @@
 # My changes
 
-- It now uses Node v16 instead of Node v12.
+- It now uses Node v20 instead of Node v16.
 - Uprade all packages to the latest versions (whenever possible).
 - Fixes messy `.gitignore`.
 - Bundles `node_modules` used in action by NCC.
 
-# GitHub Action for substituting variables in parameterized files ![.github/workflows/ci.yml](https://github.com/microsoft/variable-substitution/workflows/.github/workflows/ci.yml/badge.svg?branch=master)
+# GitHub Action for substituting variables in parameterized files ![.github/workflows/ci.yml](https://github.com/TomaszKandula/variable-substitution/workflows/.github/workflows/ci.yml/badge.svg?branch=master)
 
 With the Variable Substitution Action for GitHub, you can apply variable substitution to XML, JSON and YAML based configuration and parameter files.
 
@@ -16,7 +16,7 @@ With the Variable Substitution Action for GitHub, you can apply variable substit
 
 If you are looking for more Github Actions to deploy code or a customized image into an Azure Webapp or a Kubernetes service, consider using [Azure Actions](https://github.com/Azure/actions).
 
-The definition of this Github Action is in [action.yml](https://github.com/microsoft/variable-substitution/blob/master/action.yml).
+The definition of this Github Action is in [action.yml](https://github.com/TomaszKandula/variable-substitution/blob/master/action.yml).
 
 ### Example
 See [Use variable substitution with GitHub Actions](https://docs.microsoft.com/en-us/azure/developer/github/github-variable-substitution) for an example of how to use variable substitution.
@@ -34,9 +34,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - uses: microsoft/variable-substitution@v1 
+    - uses: TomaszKandula/variable-substitution@v1.0.1 
       with:
         files: 'Application/*.json, Application/*.yaml, ./Application/SampleWebApplication/We*.config'
       env:
