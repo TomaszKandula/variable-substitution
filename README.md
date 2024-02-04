@@ -1,6 +1,6 @@
 # My changes
 
-- It now uses Node v16 instead of Node v12.
+- It now uses Node v20 instead of Node v16.
 - Uprade all packages to the latest versions (whenever possible).
 - Fixes messy `.gitignore`.
 - Bundles `node_modules` used in action by NCC.
@@ -34,9 +34,9 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - uses: microsoft/variable-substitution@v1 
+    - uses: TomaszKandula/variable-substitution@v1.0.1 
       with:
         files: 'Application/*.json, Application/*.yaml, ./Application/SampleWebApplication/We*.config'
       env:
