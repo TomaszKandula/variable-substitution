@@ -5,7 +5,7 @@
 - Fixes messy `.gitignore`.
 - Bundles `node_modules` used in action by NCC.
 
-# GitHub Action for substituting variables in parameterized files ![.github/workflows/ci.yml](https://github.com/TomaszKandula/variable-substitution/workflows/.github/workflows/ci.yml/badge.svg?branch=master)
+# GitHub Action for substituting variables
 
 With the Variable Substitution Action for GitHub, you can apply variable substitution to XML, JSON and YAML based configuration and parameter files.
 
